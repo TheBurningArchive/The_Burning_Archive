@@ -1,27 +1,42 @@
-// pages/articles.js
+import React from "react";
+import Link from "next/link";
+
+// Dati di esempio; in futuro potrai sostituirli con fetch da database o CMS
+const articles = [
+  {
+    id: 1,
+    title: "History of Cinema",
+    date: "2025-12-10",
+    category: "Cinema",
+    readTime: "5 min",
+    slug: "history-of-cinema"
+  },
+  {
+    id: 2,
+    title: "Philosophy Today",
+    date: "2025-12-09",
+    category: "Philosophy",
+    readTime: "7 min",
+    slug: "philosophy-today"
+  }
+];
+
 export default function Articles() {
   return (
-    <div>
-      <header>
-        <h1>Articles</h1>
-      </header>
-
-      <nav>
-        <a href="/">Home</a>
-        <a href="/articles">Articles</a>
-        <a href="/">Contact</a>
-        <a href="/newsletter">Newsletter</a>
-      </nav>
-
-      <div className="container">
-        <h2>Latest Article</h2>
-        <div className="article">
-          <h3>Title of the First Article</h3>
+    <div className="container">
+      <h1>Articles</h1>
+      {articles.map(article => (
+        <div key={article.id} className="article-preview">
+          <h2>
+            <Link href={`/articles/${article.slug}`}>
+              {article.title}
+            </Link>
+          </h2>
           <p>
-            This is a sample text. Replace it with your real article content.
+            {article.date} | {article.category} | {article.readTime} read
           </p>
         </div>
-      </div>
+      ))}
     </div>
-  )
+  );
 }

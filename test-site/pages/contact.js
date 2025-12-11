@@ -1,29 +1,13 @@
+// pages/contact.js
 export default function Contact() {
   return (
-    <div className="container">
-      <header><h1>Contact</h1></header>
-
-      <nav>
-        <a href="/">Home</a>
-        <a href="/articles">Articles</a>
-        <a href="/contact">Contact</a>
-        <a href="/newsletter">Newsletter</a>
-      </nav>
-
-      <h2>Send us a message</h2>
-      <p>You can contact us by email or Instagram.</p>
-
+    <div>
+      <h1>Contact</h1>
       <form action="/api/contact" method="POST">
-        <label>Name</label>
-        <input type="text" name="name" required />
-
-        <label>Email</label>
-        <input type="email" name="email" required />
-
-        <label>Message</label>
-        <textarea name="message" rows="5" required></textarea>
-
-        <input type="submit" value="Send" />
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
       </form>
     </div>
   )
