@@ -1,0 +1,103 @@
+/* BACKGROUND E COLORI BASE */
+body {
+  background: #000000;  /* sfondo nero */
+  color: #ffffff;       /* testi bianchi */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* LINK */
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ff4d4d; /* opzionale, leggero cambio colore su hover dei link */
+}
+
+/* HERO */
+.hero-title {
+  font-size: 72px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin: 0 auto 16px auto;  /* margine sopra e sotto automatico per centrare */
+  text-align: center;         /* forza l’allineamento orizzontale */
+  display: block;             /* assicura che il margine auto funzioni */
+  color: #ffffff;
+}
+
+.hero-subtitle {
+  font-size: 22px;
+  font-weight: 400;
+  max-width: 720px;
+  margin: 0 auto;             /* centrato orizzontalmente */
+  text-align: center;
+  color: #dddddd;
+}
+
+
+/* HEADER */
+.site-header {
+  width: 100%;
+  border-bottom: 1px solid #333;
+  padding: 32px 0;
+  margin-bottom: 48px;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  object-fit: contain;
+  display: block;
+}
+
+.nav a {
+  margin-left: 24px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.nav a:hover {
+  color: #ff4d4d; /* link rosso scuro al passaggio del mouse */
+}
+
+/* GRIGLIA ARTICOLI */
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.article-card {
+  border: 1px solid #333;
+  padding: 24px;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  background: #111;  /* colore base card leggermente più chiaro del nero */
+  color: #ffffff;
+}
+
+.article-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+  background: #8b0000; /* rosso scuro al passaggio del mouse */
+}
+
+.article-card h3 {
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
+.article-card p {
+  font-size: 16px;
+  line-height: 1.4;
+}
