@@ -1,29 +1,40 @@
+// dati di esempio per gli articoli
+const articles = [
+  { title: "Article One", slug: "article-one", excerpt: "This is a short summary of article one." },
+  { title: "Article Two", slug: "article-two", excerpt: "This is a short summary of article two." },
+  { title: "Article Three", slug: "article-three", excerpt: "This is a short summary of article three." },
+  { title: "Article Four", slug: "article-four", excerpt: "This is a short summary of article four." },
+];
+
 export default function Home() {
   return (
-    <div className="container">
-      <header>
-        <h1>The Burning Archive</h1>
+    <>
+      <header className="site-header">
+        <div className="container">
+          <img src="/logo.png" alt="The Burning Archive" className="logo" />
+          <nav className="nav">
+            <a href="/articles">Articles</a>
+            <a href="/newsletter">Newsletter</a>
+            <a href="/contact">Contact</a>
+          </nav>
+        </div>
       </header>
 
-      <nav>
-        <a href="/">Home</a>
-        <a href="/articles">Articles</a>
-        <a href="/contact">Contact</a>
-        <a href="/newsletter">Newsletter</a>
-      </nav>
+      <main className="container">
+        <h1 className="hero-title">The Burning Archive</h1>
+        <p className="hero-subtitle">
+          A living archive of texts, images and cultural fragments.
+        </p>
 
-      <h2>Welcome</h2>
-      <p>
-        The Burning Archive is an editorial project dedicated to philosophy, history, and cinema.
-        Every month we publish analyses and insights that expand what we present on Instagram.
-      </p>
-
-      <h2>Contact</h2>
-      <p>Email us or reach us on Instagram:</p>
-      <p><strong>Instagram:</strong> 
-        <a href="https://instagram.com/the_burning.archive" target="_blank">@the_burning.archive</a>
-      </p>
-      <p><strong>Email:</strong> your-email@example.com</p>
-    </div>
-  )
+        <section className="articles-grid">
+          {articles.map((article) => (
+            <a href={`/articles/${article.slug}`} key={article.slug} className="article-card">
+              <h3>{article.title}</h3>
+              <p>{article.excerpt}</p>
+            </a>
+          ))}
+        </section>
+      </main>
+    </>
+  );
 }
