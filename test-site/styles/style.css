@@ -110,12 +110,14 @@ a:hover {
 }
 
 .card {
-  background: white;
-  border-radius: 12px;
-  width: 260px;
-  height: 180px;
+  background-color: white;
+  border-radius: 8px;
   overflow: hidden;
-  transition: background 0.2s ease;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  width: 300px;   /* larghezza maggiore */
+  height: 200px;  /* altezza maggiore */
+  margin: 0 10px;
 }
 
 .card:hover {
