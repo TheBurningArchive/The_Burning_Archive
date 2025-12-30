@@ -39,22 +39,4 @@ export default function Home() {
     </div>
   </div>
 </section>
-
-      <main className="container">
-        <h1 className="hero-title">The Burning Archive</h1>
-        <p className="hero-subtitle">
-          A living archive of texts, images and cultural fragments.
-        </p>
-
-        <section className="articles-grid">
-          {articles.map((article) => (
-            <a href={`/articles/${article.slug}`} key={article.slug} className="article-card">
-              <h3>{article.title}</h3>
-              <p>{article.excerpt}</p>
-            </a>
-          ))}
-        </section>
-      </main>
-    </>
-  );
-}
+  
