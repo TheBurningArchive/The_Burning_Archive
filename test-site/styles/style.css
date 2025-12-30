@@ -1,10 +1,10 @@
 /* BACKGROUND E COLORI BASE */
 body {
-  background: #000000;  /* sfondo nero */
-  color: #ffffff;       /* testi bianchi */
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 17px;
-  line-height: 1.7;
+  background: #000000;
+  color: #ffffff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 /* LINK */
@@ -57,10 +57,11 @@ a:hover {
 
 .site-title {
   font-family: "Times New Roman", Times, serif;
-  font-size: 40px;
+  font-size: 64px;
   font-weight: normal;
+  letter-spacing: 2px;
+  text-align: center;
   margin: 0;
-  color: white;
 }
 .site-nav {
   display: flex;
@@ -70,9 +71,10 @@ a:hover {
 
 .site-nav a {
   font-family: "Times New Roman", Times, serif;
-  font-size: 16px;
-  text-decoration: none;
+  font-size: 20px;
   color: darkred;
+  text-decoration: none;
+  margin: 0 20px;
   transition: color 0.2s ease;
 }
 
@@ -93,9 +95,11 @@ a:hover {
 
 .latest-title {
   font-family: "Times New Roman", Times, serif;
-  font-style: italic;
-  font-size: 20px;
-  margin-bottom: 32px;
+  font-size: 28px;
+  font-style: normal;
+  text-align: center;
+  margin: 60px 0 40px 0;
+  letter-spacing: 1px;
 }
 
 /* GRIGLIA ARTICOLI */
