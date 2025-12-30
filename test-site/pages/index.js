@@ -14,12 +14,12 @@ export default function Home() {
           <a href="/writings">WRITINGS</a>
           <a href="/newsletter">NEWSLETTER</a>
           <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            INSTAGRAM
-          </a>
+  href="https://www.instagram.com/the_burning.archive/"
+  target="_blank"
+  rel="noreferrer"
+>
+  INSTAGRAM
+</a>
         </nav>
       </header>
 

@@ -48,12 +48,17 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  position: relative;
+  margin-top: 40px;
 }
 
 .logo {
-  height: 40px;
+  position: absolute;
+  left: 40px;       /* più a sinistra */
+  width: 80px;      /* più grande */
+  height: auto;
 }
+
 
 .site-title {
   font-family: "Times New Roman", Times, serif;
