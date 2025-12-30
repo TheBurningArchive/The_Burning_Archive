@@ -24,7 +24,7 @@ export default function Home() {
       </header>
 
       <section className="latest-section">
-        <p className="latest-title">latest writings</p>
+        <p className="latest-title">LATEST WRITINGS</p>
 
         <div className="cards">
           <div className="card">
