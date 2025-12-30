@@ -106,26 +106,29 @@ a:hover {
 .cards {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 20px; /* spazio tra le card */
+  fex-wrap: wrap;
 }
 
-.card {
+.cards .card {
   background-color: white;
   border-radius: 8px;
   overflow: hidden;
   transition: background-color 0.3s ease;
   cursor: pointer;
-  width: 300px;   /* larghezza maggiore */
-  height: 200px;  /* altezza maggiore */
-  margin: 0 10px;
+  width: 350px;   /* aumenta qui se vuoi ancora più grandi */
+  height: 250px;  /* altezza maggiore */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card:hover {
   background: darkred;
 }
 
-.card img {
+.cards .card img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* mantiene proporzioni e riempie il box */
 }
