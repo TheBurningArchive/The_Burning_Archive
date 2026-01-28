@@ -1,0 +1,81 @@
+/* RESET BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE DOCUMENTO */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #111111;
+  line-height: 1.6;
+}
+
+/* LINK */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* CONTAINER CENTRALE */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 80px 24px 0 24px; /* margine superiore di 80px, niente margine inferiore */
+  text-align: center;         /* centra il contenuto orizzontalmente */
+}
+
+/* HERO */
+.hero-title {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  max-width: 640px;
+  line-height: 1.6;
+  margin: 0 auto;             /* centra il paragrafo orizzontalmente */
+}
+/* HEADER */
+.site-header {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  padding: 24px 0;
+  margin-bottom: 48px;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;       /* regola l’altezza del logo */
+  object-fit: contain; /* mantiene proporzioni corrette */
+}
+
+
+.nav a {
+  margin-left: 24px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #111;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}

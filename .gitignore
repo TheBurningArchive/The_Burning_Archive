@@ -20,3 +20,13 @@ yarn-error.log*
 # OS files
 .DS_Store
 Thumbs.db
+package-old.json
+package.json
+Pages/
+package-lock.json
+# Ignora tutto
+*
+
+# Consenti test-site e tutto il suo contenuto
+!/test-site/
+!/test-site/**
